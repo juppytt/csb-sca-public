@@ -45,10 +45,11 @@ Now you are in the vm, and run the following commands within vm to
 initialize the environment.
 
 ```sh
+./setup.sh
 
 ```
 
-## Task-1. Capturing Time Differences in Cache Access (XXX pts)
+## Task-1. Capturing Time Differences in Cache Access
 
 * (Expected) Results
 
