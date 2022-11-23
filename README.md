@@ -28,11 +28,11 @@ that this assignment will be using `ubuntu/bionic64`, a different VM
 that you have used for the assignment 1 and 2.
 
 ```sh
-# Fetch Ubuntu 16.04 VM from the server.
-$ vagrant box add ubuntu/xenial64
+# Fetch Ubuntu 18.04 VM from the server.
+$ vagrant box add ubuntu/bionic64
 
 # Prepare vagrant settings for the VM in the current working directory.
-$ vagrant init ubuntu/xenial64
+$ vagrant init ubuntu/bionic64
 
 # Boot-up the VM
 $ vagrant up
@@ -144,7 +144,7 @@ Have you noticed how to leak the key using the flush+reload attack?
 For your convenience, you may use functions in `task2/utility.h` and
 `run()` defined in `task2/oracle.h`.  Your goal is to fill in `TODO`s
 in `userland.c` to leak the secret. We embedded 16 byte secret in the
-kernel module, i.e. `secret(0)` to `secret(1)`. However for this
+kernel module, i.e. `secret(0)` to `secret(15)`. However for this
 assignment you should leak only 4 bytes (`secret(0)` to `secret(3)`).
 You should submit both (1) the kernel secrets and (2) the source code
 (doesn't have to leak all bytes at once, but you should include
