@@ -1,0 +1,3 @@
+include-flags := $(patsubst %,-I%,$(include-dir))
+ldflags := $(patsubst %,-L%,$(ld-dir))
+cflags := -O2 $(include-flags)

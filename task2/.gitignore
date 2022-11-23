@@ -1,0 +1,7 @@
+*.o
+module/*.ko
+module/*.mod.c
+module/Module.symvers
+module/modules.order
+
+client/userland
